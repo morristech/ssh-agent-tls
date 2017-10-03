@@ -6,7 +6,7 @@ jdk:
 
 install: true
 
-script: mvn clean test
+script: mvn -e clean test
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
